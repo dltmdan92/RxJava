@@ -5,9 +5,9 @@ interface Mathematics {
     int cal(int x, int y);
 }
 
-// @FunctionalInterface 이걸 셋팅함으로써 컴파일 타임 때 람다식을 위한 interface를 check할 수 있다.
 @FunctionalInterface
 interface Trace1<T> {
+    // @FunctionalInterface 이걸 셋팅함으로써 컴파일 타임 때 람다식을 위한 interface를 check할 수 있다.
     void follow(T t);
 }
 
